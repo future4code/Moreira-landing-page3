@@ -1,5 +1,6 @@
+
 /* ===================================== GOOGLE FONTS ===================================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 /* ===================================== VARIABLES ===================================== */
 :root{
@@ -10,14 +11,14 @@
     --cor-hover-menu: #444140;
 
     /* =================== TYPOGRAPHY =================== */
-    --font-body: 'Roboto', sans-serif;
+    --font-body: 'Nunito', sans-serif;
 
     --altura-menu: 4rem;
     --padding-vertical-menu: 0 2rem;
-    --padding-itens-menu: .5rem;
-    --gap-itens-menu-desktop: .5rem;
-    --border-radius-itens-menu: 1rem;
-    --transicao-hover-itens-menu: 1s;
+    --padding-menu-items: .5rem;
+    --gap-menu-items-desktop: .5rem;
+    --border-radius-menu-items: 1rem;
+    --transicao-hover-menu-items: 1s;
     --tamanho-logo-menu: 100%;
     --icone-btn-mobile: 3rem;
 }
@@ -47,9 +48,9 @@
     z-index: 20;
 }
 
-.itens-menu{
+.menu-items{
     display: flex;
-    gap: var(--gap-itens-menu-desktop);
+    gap: var(--gap-menu-items-desktop);
 }
 
 #lista-menu{
@@ -58,14 +59,14 @@
 
 .item{
     text-decoration: none;
-    padding: var(--padding-itens-menu);
+    padding: var(--padding-menu-items);
     color: var(--cor-fonte-menu);
-    border-radius: var(--border-radius-itens-menu);
+    border-radius: var(--border-radius-menu-items);
 }
 
 .item:hover{
     background-color: var(--cor-hover-menu);
-    transition: var(--transicao-hover-itens-menu);
+    transition: var(--transicao-hover-menu-items);
 }
 
 #logo-menu{
@@ -82,6 +83,7 @@
     cursor: pointer;
 }
 
+
 /* =================== ESTILIZAÇÃO CONTEÚDO =================== */
 .container-main{
   display: flex;
@@ -97,25 +99,31 @@
 
 .primeira-secao{
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  
+  /* width: 100%; */
   color:#363636;
 }
 
 .box-secao1{
   color: #363636;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   background-color: #FFFF;
+  /* padding-top: 1rem; */
+  background-image: url("imagensF4BANK/foto_fundo4.png");
+  background-position: center;
 }
 
 .titulo{
+  font-size: 1.875rem;
   padding: 1em 1.6em;
-  max-width: 300px;
+  max-width: 500px;
+  font-weight: bold;
+
 }
 
 .subtitulo{
   padding: .5em 2.3em;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .lista{
@@ -123,20 +131,11 @@
   max-width: 300px;
 }
 
-/* .gif-do-app {
-
-
-width: 50%;
-
-} */
-
 .gif-app{
   position: relative;
   width: 20%;
-  margin-left: 500px;
-  bottom: 250px;
-
-
+  margin-left: 5px;
+  bottom: 10px;
 }
 
 /* =================== PARTE DOIS =================== */
@@ -144,12 +143,12 @@ width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #363636;
+  color: white;
   width: 100%;
   background-image: url("imagensF4BANK/foto_fundo.png");
-  /* background-size:100%; */
   background-position: center;
-  /* padding: 1.5rem; */
+  background-color: #d15407;
+  
   
 }
 
@@ -159,15 +158,7 @@ position: relative;
 
 }
 
-.foto-fundo-geometrico{
-  position: relative;
-  width: 130%;
-
-
-}
-
 .fotos-parte-dois{
-
   width: 60%;
   height: 60%;
 }
@@ -175,7 +166,7 @@ position: relative;
 .conteudo-cartao{
   width: 100%;
   height: 100%;
-  padding-left:  100px;
+  padding-right: 10px;
 }
 
 .texto-cartao{
@@ -186,55 +177,82 @@ position: relative;
 }
 
 .lista-cartao{
-  /* background-image: url("imagensF4BANK/foto_fundo.png");
-  background-size: 150% 180%; */
   list-style: none;
   padding-top: 40px;
   font-size: 15px;
-  padding-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .foto-pessoas{
   position: relative;
-  width: 70%; 
+  width: 80%; 
   margin:40px;
+  animation: 3s move;
 
 }
+
+.foto-cartao-frente, .foto-cartao {
+background-color: transparent;
+animation: spin 10s linear infinite;
+width: 50%;
+
+}
+
+  @keyframes spin {
+    0% {
+     transform: rotateZ(0deg);
+    }
+    100% {
+     transform: rotateZ(360deg);
+    }
+   }
 
 .conteudo-conta-digital-pj{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#ffbd59;
   color: #363636;
-  padding: 20px;
-  
-  
+  padding: 30px;
+  background-image: url("imagensF4BANK/foto-fundo4.png");
+  background-position: center;
 }
 
 .conteudo-conta-pj{
   width: 100%;
   height: 100%;
-  padding-left: 10px;
+  padding-left: 200px;
 }
 
 .texto-conta-pj, .texto-conta-digital-pf{
 font-size: 50px;
 font-weight: bold;
+padding-top: 10px;
+
 }
 
 .lista-conta-pj{
   list-style: none;
   padding-top: 40px;
   font-size: 15px;
+  
 }
+
 
 .foto-escritorio{
   position: relative;
   width: 100%;
   margin: 0;
   padding-right: 100px;
+  animation: 2s move;
+}
+
+@keyframes move {
+  from {
+      right: 20%;
+  }
+  to {
+    right: 40%;
+  }
 }
 
 
@@ -243,60 +261,67 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color:white; */
   color: #363636;
-  width: 100%;
   background-image: url("imagensF4BANK/foto-fundo2.png");
   background-position: center;
+  background-color: #ff914d;
+  
 }
 
 .texto-coracao{
   display: block;
-  padding: 30px 30px;
-  line-height: 1.7;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  box-shadow: 1px 1px 5px #4F4F4F;
-  border-radius: 5px;
+  padding-right: 300px;
+  padding-left: 100px;
+  
+}
+
+.texto-coracao2{
+  display: block;
+  font-size: 20px;
+  line-height: 1.7;
+  padding-right: 300px;
+  padding-left: 100px;
 }
 
 .imagem-container03{
-    padding: 20px;
+    width: 100%;
+    padding-right: 100px;
+    margin: 30px;
+
 
 }
 
 /* =================== ESTILIZAÇÃO RODAPÉ =================== */
-.container-footer{
+.containerFooter{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items:stretch;
     background-color: #444140;
     color: azure;
     width: 100%;
     height: auto;
     padding: 2rem;
     margin-top: auto;
-    clear: both;    
-   
+    clear: both;
 }
 
-.bloco1-footer{
-    display: flex;
+.parte1{
+    
     border-bottom: 2px solid rgba(0, 0, 0, .06);
     padding-bottom: 1em;
+    margin-left: 180px;
 }
 
-.bloco2-footer{
+.parte2{
     padding: 1em;
     align-self: center;
+    margin-right: 30px;
 }
 
-.lista-footer{
-    display: flex;
-}
-
-.bloco-lista{
+.lista-parte1{
     list-style: none;
 }
 
@@ -307,96 +332,62 @@ footer div ul li a{
 footer div ul li a:hover{
     color: #F2884B;
     transition: .2s;
-    
+
 }
 
-.bloco-texto1{
+.texto1{
     display: flex;
     flex-direction: column;
-    /* width: 20vw; */
+    width: 20vw;
     padding: 1rem 1rem;
 
 }
 
 
-.bloco-texto2{
+.texto2{
     display: flex;
     flex-direction: column;
-    /* width: 20vw; */
+    width: 20vw;
     padding: 1rem 1rem;
 }
 
-.bloco-texto3{
+.texto3{
     display: flex;
     flex-direction: column;
-    /* width: 20vw; */
+    width: 20vw;
     padding: 1rem 1rem;
+    margin-left: 180px;
 }
 
-.redes-sociais{
-    display: flex;
-    align-self: center;
+
+.redesSociais{
     cursor: pointer;
+    list-style: none;
+
 }
 
-.redes-sociais a img:hover{
+.redesSociais a img:hover{
     color:  #F2884B;
     transition: .2s;
+    list-style: none;
+}
+
+.linkRedes {
+  display: flex;
+  padding: 1rem 1rem;
+  list-style: none;
+  margin-left:20px;
+}
+
+.icone-links{
+margin-left:10px;
 }
 
 svg:hover path{
-    fill:  #F2884B;    
+    fill:  #F2884B;
 }
 
-/* =================== RESPONSIVIDADE =================== */
-@media screen and (max-width: 800px) {
-    .bx-menu-open{
-        display: block;
-    }
 
-    .itens-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 8rem);
-        top: 8rem;
-        left: -110%;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: var(--altura-menu);
-        left: -100%;
-        padding: 1rem;        
-        background-image: var(--cor-menu-mobile);
-        transition: linear .5s;
-        overflow-y: auto;
-        z-index: 1000;
-    }
-
-    #lista-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3rem;
-        width: 100%;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
-    }
-    .item{
-        width: 100%;
-        text-align: center;
-    }
-
-    .bx-menu-open:hover{
-        height: 3.5rem ;
-        transition: .5s;
-    }
-
-    #check:checked ~ .itens-menu{ /* Se 'checked', ativa menu mobile!*/
-        left: 0;
-    }
 
     /* =================== PRIMEIRA SEÇÃO =================== */
 
@@ -450,28 +441,24 @@ svg:hover path{
 
     /* =================== RODAPÉ =================== */
 
-    .container-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:flex-start  ;
-        background-color: #444140;
-        color: azure;
-        width: 100%;
-        height: auto;
-        padding: 2rem;
-        margin-top: auto;
-        clear: both;    
-    }
-
-    .bloco1-footer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-
-}
+    .containerFooter{
+      display: flex;
+      justify-content: center;
+      align-items:flex-start  ;
+      background-color: #444140;
+      color: azure;
+      width: 100%;
+      /* height: auto; */
+      /* padding: 2rem;
+      margin-top: auto; */
+      clear: both;
+  }
+  
+  .parte1{
+      display: flex;
+     
+  }
+  
 
 /* Solicitando cartão */
 
@@ -479,40 +466,48 @@ svg:hover path{
     top: 100px;
     right: 0;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 380px;
+    background-color: transparent;
+    background-image: url("imagensF4BANK/foto-fundo5.png") ;
+    background-repeat: no-repeat;
+    width: 340px;
     height: 344px;
-    border-radius: 50px;
     text-align: center;
-    margin-right: 20px;
+    
   }
   
   .solicitar-conta h2 {
     margin-top: 50px;
     color: #fff;
+    font-size:20px;
+    text-align: center;
+    margin-right: 50px;
+    padding: 10px;
   }
   
   .solicitar-conta button {
     margin-top: 50px;
-    padding: 15px;
+    padding: 10px 20px;
+    margin-right: 50px;
     border: none;
     border-radius: 5px;
-    background-color: #ff7a00;
-    color: #fff;
-    font-size: 1.125em;
-    width: 300px;
+    background-color: white;
+    color: #444140;
+    font-size: 12px;
+    width: 100px;
     transition: .3s;
     cursor: pointer;
+    text-align: center;
+
   }
   
   .solicitar-conta button:hover {
-    background-color: #b15500;
-  }
+    background-color:blanchedalmond;
+    }
   
   .solicitar-conta::before {
     position: relative;
-    top: 193px;
-    right: -120px;
+    top: 200px;
+    right: -70px;
     content: "";
     display: inline-block;
     width: 0.4em;
@@ -528,3 +523,54 @@ svg:hover path{
           display: none;
       }
   }
+
+
+  /* =================== RESPONSIVIDADE =================== */
+  @media screen and (max-width: 375px) {
+    .bx-menu-open{
+        display: block;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        top: 8rem;
+        left: -110%;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: var(--altura-menu);
+        left: -100%;
+        padding: 1rem;        
+        background-image: var(--cor-menu-mobile);
+        transition: linear .5s;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    #lista-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bx-menu-open:hover {
+        height: 3.5rem ;
+        transition: .5s;
+    }
+
+    #check:checked ~ .menu-items{ /* Se 'checked', ativa menu mobile!*/
+        left: 0;
+    }
