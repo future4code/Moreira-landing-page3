@@ -1,3 +1,4 @@
+```
 # landing-page-template
 
 ### Link do surge:
@@ -12,5 +13,6 @@ Utilizamos como referência, Nubanck, Banco Inter, Neon e WoopSicredi;
 Colocamos animação na foto do cartão de crédito girando na tela;
 Na foto do número 4 também tem uma animção que nada para a direita;
 A foto do Celular no início da pagina é um gif.
+```
 
 
