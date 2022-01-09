@@ -2,7 +2,7 @@
 # landing-page-template
 
 ### Link do surge:
-ill-fated-tent.surge.sh
+f4bank-acs.surge.sh
 
 Nosso projeto tem 3 páginas fizemos a customização da Home e Contato;
 Dentro de contato tem um botão chamado Abra sua Conta que abre uma caixa de cadastro;
