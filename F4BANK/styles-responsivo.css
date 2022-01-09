@@ -259,15 +259,15 @@ padding-top: 10px;
   background-position: center;
   background-color: #ff914d;
   
+  
+  
 }
 
 .texto-coracao{
   display: block;
   font-size: 25px;
   font-weight: bold;
-  padding-right: 300px;
   padding-left: 100px;
-  
 }
 
 .texto-coracao2{
@@ -367,9 +367,9 @@ footer div ul li a:hover{
 
 .linkRedes {
   display: flex;
-  padding: 1rem 1rem;
   list-style: none;
   margin-left:20px;
+  margin-top: 15px;
 }
 
 .icone-links{
@@ -470,8 +470,9 @@ svg:hover path{
     color: #fff;
     font-size:20px;
     text-align: center;
-    margin-right: 50px;
-    padding: 10px;
+    margin-right: 80px;
+    
+    margin-left: 60px;
   }
   
   .solicitar-conta button {
@@ -496,7 +497,7 @@ svg:hover path{
   
   .solicitar-conta::before {
     position: relative;
-    top: 200px;
+    top: 210px;
     right: -70px;
     content: "";
     display: inline-block;
@@ -582,6 +583,7 @@ svg:hover path{
         font-size: 0.70rem;
         text-align: center;
         margin-right: 1rem;
+        
         
       }
       
@@ -865,9 +867,9 @@ svg:hover path{
       
       .linkRedes {
         display: flex;
-        padding: 1rem 1rem;
         list-style: none;
-        margin-left:5px;
+        margin-left:0rem;
+        
       }
       
       svg:hover path{
