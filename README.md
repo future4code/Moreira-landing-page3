@@ -1,7 +1,7 @@
+```
+# landing-page-template
 
-#landing-page-template
-
-###Link do surge:
+### Link do surge:
  well-made-spy.surge.sh
 
 Nosso projeto tem 3 páginas fizemos a customização da Home e Contato;
@@ -13,8 +13,7 @@ Utilizamos como referência, Nubanck, Banco Inter, Neon e WoopSicredi;
 Colocamos animação na foto do cartão de crédito girando na tela;
 Na foto do número 4 também tem uma animção que nada para a direita;
 A foto do Celular no início da pagina é um gif.
-
-
+```
 
 ![image](https://user-images.githubusercontent.com/92445126/148828896-0b52e4fa-ace5-4dce-a860-8c4015dd2d50.png)
 
